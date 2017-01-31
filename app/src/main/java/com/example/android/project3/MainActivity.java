@@ -8,10 +8,16 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import static com.example.android.project3.R.id.day1;
+import static com.example.android.project3.R.id.day2;
+import static com.example.android.project3.R.id.day3;
+
 
 public class MainActivity extends AppCompatActivity {
 
     int score = 0;
+    final int A1 = R.id.month1;
+    final int A1_1 = day1;
     final int A2 = R.id.SKorea;
     final int A4 = R.id.bro;
     final String A5 = "Jaeeun Lee";
@@ -26,20 +32,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean Q1() {
-        CheckBox month1 = (CheckBox) findViewById(R.id.month1);
-        CheckBox month2 = (CheckBox) findViewById(R.id.month2);
-        CheckBox month3 = (CheckBox) findViewById(R.id.month3);
-        if (month1.isChecked() && !month2.isChecked() && !month3.isChecked()) {
+        RadioGroup Q1rg = (RadioGroup) findViewById(R.id.birthmonth);
+
+        if (Q1rg.getCheckedRadioButtonId() == A1) {
             return true;
         }
         return false;
     }
 
     public boolean Q1_1() {
-        CheckBox day1 = (CheckBox) findViewById(R.id.day1);
-        CheckBox day2 = (CheckBox) findViewById(R.id.day2);
-        CheckBox day3 = (CheckBox) findViewById(R.id.day3);
-        if (day1.isChecked() && !day2.isChecked() && !day3.isChecked()) {
+        RadioGroup Q1_1rg = (RadioGroup) findViewById(R.id.birthday);
+
+        if (Q1_1rg.getCheckedRadioButtonId() == A1_1) {
             return true;
         }
         return false;

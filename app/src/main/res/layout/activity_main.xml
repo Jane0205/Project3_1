@@ -42,26 +42,32 @@
                 android:layout_marginTop="10dp"
                 android:text="Month :" />
 
-            <CheckBox
-                android:id="@+id/month1"
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/month"
-                android:text="February" />
+                android:orientation="horizontal"
+                android:id="@+id/birthmonth">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="February"
+                    android:id="@+id/month1"
+                    android:layout_marginLeft="50dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="July"
+                    android:id="@+id/month2"
+                    android:layout_marginLeft="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="December"
+                    android:id="@+id/month3"
+                    android:layout_marginLeft="10dp"/>
+            </RadioGroup>
 
-            <CheckBox
-                android:id="@+id/month2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/month1"
-                android:text="July" />
 
-            <CheckBox
-                android:id="@+id/month3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/month2"
-                android:text="December" />
 
             <TextView
                 android:id="@+id/day"
@@ -70,32 +76,37 @@
                 android:layout_marginTop="40dp"
                 android:text="Day  :    " />
 
-            <CheckBox
-                android:id="@+id/day1"
+            <RadioGroup
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_toRightOf="@id/day"
-                android:text="5th" />
+                android:orientation="horizontal"
+                android:id="@+id/birthday">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5th"
+                    android:id="@+id/day1"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginLeft="35dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17th"
+                    android:id="@+id/day2"
+                    android:layout_marginTop="32dp"
 
-            <CheckBox
-                android:id="@+id/day2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/day1"
-                android:layout_alignBottom="@+id/day1"
-                android:layout_centerHorizontal="true"
-                android:text="17th" />
+                    android:layout_marginLeft="10dp"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21th"
+                    android:id="@+id/day3"
+                    android:layout_marginTop="32dp"
 
-            <CheckBox
-                android:id="@+id/day3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/day2"
-                android:layout_alignBottom="@+id/day2"
-                android:layout_toEndOf="@+id/month2"
-                android:layout_toRightOf="@+id/month2"
-                android:text="21th" />
+                    android:layout_marginLeft="10dp"/>
+            </RadioGroup>
+
+
 
         </RelativeLayout>
 
