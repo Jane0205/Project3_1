@@ -33,8 +33,7 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="Q1">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/month"
@@ -48,24 +47,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/month"
-                android:text="February"
-                android:onClick="Q1"/>
+                android:text="February" />
 
             <CheckBox
                 android:id="@+id/month2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/month1"
-                android:text="July"
-                android:onClick="Q1"/>
+                android:text="July" />
 
             <CheckBox
                 android:id="@+id/month3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/month2"
-                android:text="December"
-                android:onClick="Q1"/>
+                android:text="December" />
 
             <TextView
                 android:id="@+id/day"
@@ -80,8 +76,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@id/day"
-                android:text="5th"
-                android:onClick="Q1"/>
+                android:text="5th" />
 
             <CheckBox
                 android:id="@+id/day2"
@@ -90,8 +85,7 @@
                 android:layout_alignBaseline="@+id/day1"
                 android:layout_alignBottom="@+id/day1"
                 android:layout_centerHorizontal="true"
-                android:text="17th"
-                android:onClick="Q1"/>
+                android:text="17th" />
 
             <CheckBox
                 android:id="@+id/day3"
@@ -101,8 +95,7 @@
                 android:layout_alignBottom="@+id/day2"
                 android:layout_toEndOf="@+id/month2"
                 android:layout_toRightOf="@+id/month2"
-                android:text="21th"
-                android:onClick="Q1"/>
+                android:text="21th" />
 
         </RelativeLayout>
 
@@ -114,37 +107,33 @@
             android:text="Q2.Where is Jane from?" />
 
         <RadioGroup
+            android:id="@+id/from"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/from">
+            android:layout_height="match_parent">
 
             <RadioButton
                 android:id="@+id/SKorea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="South Korea"
-                android:onClick="Q2"/>
+                android:text="South Korea" />
 
             <RadioButton
                 android:id="@+id/America"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="America"
-                android:onClick="Q2"/>
+                android:text="America" />
 
             <RadioButton
                 android:id="@+id/Brazil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Brazil"
-                android:onClick="Q2"/>
+                android:text="Brazil" />
 
             <RadioButton
                 android:id="@+id/NKorea"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="North Korea"
-                android:onClick="Q2"/>
+                android:text="North Korea" />
         </RadioGroup>
 
         <TextView
@@ -159,37 +148,33 @@
 
             <CheckBox
                 android:id="@+id/major2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="English"
-                android:onClick="Q3"/>
+                android:text="English" />
 
             <CheckBox
                 android:id="@+id/major1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Computer Science"
                 android:layout_marginLeft="150dp"
-                android:onClick="Q3"/>
+                android:text="Computer Science" />
 
             <CheckBox
                 android:id="@+id/major4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fashion"
-                android:layout_marginTop="30dp"
                 android:layout_marginLeft="150dp"
-                android:onClick="Q3"/>
+                android:layout_marginTop="30dp"
+                android:text="Fashion" />
 
             <CheckBox
                 android:id="@+id/major3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Music"
-                android:layout_below="@+id/major2"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:onClick="Q3"/>
+                android:layout_below="@+id/major2"
+                android:text="Music" />
         </RelativeLayout>
 
         <TextView
@@ -221,7 +206,7 @@
             <ImageView
                 android:id="@+id/alone"
                 android:layout_width="130dp"
-                android:layout_height="150dp"
+                android:layout_height="100dp"
                 android:layout_alignBottom="@+id/boy"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
@@ -231,40 +216,40 @@
                 android:src="@drawable/alone" />
 
             <RadioGroup
+                android:id="@+id/sibling"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/sibling"
-                >
+                android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/sis"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/girl"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Sister"
-                    android:id="@+id/sis"
-                    android:onClick="Q4"/>
+                    android:layout_marginTop="100dp"
+                    android:layout_toLeftOf="@+id/bro"
+                    android:text="Sister" />
 
                 <RadioButton
+                    android:id="@+id/bro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/boy"
-                    android:layout_marginLeft="107dp"
-                    android:layout_marginTop="10dp"
-                    android:text="Brother"
-                    android:id="@+id/bro"
-                    android:onClick="Q4"/>
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toRightOf="@+id/sis"
+                    android:text="Brother" />
 
 
                 <RadioButton
+                    android:id="@+id/only"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="200dp"
-                    android:layout_marginTop="110dp"
-                    android:text="She is only child"
-                    android:id="@+id/only"
-                    android:onClick="Q4"/>
+                    android:layout_marginTop="98dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/bro"
+                    android:text="She is only child" />
             </RadioGroup>
         </RelativeLayout>
 
@@ -279,7 +264,7 @@
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint=":)?" />
+            android:hint="Please write down here:)" />
 
 
         <Button
